@@ -1,0 +1,15 @@
+1. What are the basic rules of XML you applied in this lab?
+●Single Root Element: All content must be enclosed within one single main tag (<students>).
+●Correct Tag Nesting: Child tags must be closed in the reverse order they were opened (e.g., <student><name>...</name></student>).
+●Properly Closed Tags: Every opening tag must have a corresponding closing tag with a forward slash (e.g., <course> and </course>).
+●Case Sensitivity: XML tags are strictly case-sensitive; <Year> and <year> would be treated as completely different tags.
+●Attribute Quotation: When attributes are used (such as xsi:noNamespaceSchemaLocation="student_schema.xsd"), their values must always be inside double or single quotes.
+2. Why does XML need a single root element?
+XML requires a single root element because it uses a tree-structured data model. The root element serves as the top-level parent container that holds all other elements. Without a single root, an XML parser cannot construct the Document Object Model (DOM) tree correctly because it wouldn't know where the document starts or ends, leading to syntax errors during parsing.
+3. How does XML ensure interoperability?
+●Platform and Software Independence: XML is written in plain text, making it readable by virtually any programming language, operating system, or application without needing specialized software.
+●Standardized Structure via Schemas (XSD): XML Schema Definitions enforce strict rules on data types and formats. This ensures that two entirely different systems can exchange data seamlessly, as both parties agree on how the data should be structured and validated.
+●Self-Describing Data: Custom tags (like <name> or <course>) explicitly describe the meaning of the data inside them, allowing different systems to parse and understand the data context without manual translation.
+
+
+Short Reflection
